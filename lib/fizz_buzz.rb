@@ -10,34 +10,37 @@ def fizz_buzz(n)
   end
 end
 
-puts fizz_buzz(1)
-puts fizz_buzz(2)
-puts fizz_buzz(3)
-puts fizz_buzz(4)
-puts fizz_buzz(5)
-puts fizz_buzz(6)
-puts fizz_buzz(15)
+# puts fizz_buzz(1)
+# puts fizz_buzz(2)
+# puts fizz_buzz(3)
+# puts fizz_buzz(4)
+# puts fizz_buzz(5)
+# puts fizz_buzz(6)
+# puts fizz_buzz(15)
 
 
-def greeting(country = 'unknown')
-  country
-end
+# def greeting(country = 'unknown')
+#   country
+# end
 
-puts greeting('japan')
-puts greeting
+# puts greeting('japan')
+# puts greeting
 
 
-def filename
-  puts __FILE__
-end
+# def filename
+#   puts __FILE__
+# end
 
-def fizz_buzz_judge
-  if __FILE__ == 'lib/fizz_buzz.rb'
-    puts 'yes'
-  else
-    puts 'no'
-  end
-end
+# def fizz_buzz_judge
+#   if __FILE__ == 'lib/fizz_buzz.rb'
+#     puts 'yes'
+#   else
+#     puts 'no'
+#   end
+# end
 
-filename
-fizz_buzz_judge
+# filename
+# fizz_buzz_judge
+
+require 'date'
+Date.today
