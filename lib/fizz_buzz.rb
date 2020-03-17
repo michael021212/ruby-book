@@ -24,6 +24,13 @@ numbers = [1,2,3,4,5,6]
 even_numbers = numbers.select(&:even?)
 puts even_numbers
 
+def greeting(*names)
+  puts "#{names.join('と')}、こんにちは！"
+end
+
+greeting('田中さん')
+greeting('田中さん','山田さん')
+
 # def greeting(country = 'unknown')
 #   country
 # end
