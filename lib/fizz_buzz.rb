@@ -10,6 +10,20 @@ def fizz_buzz(n)
   end
 end
 
+numbers = [1,2,3,4,5]
+
+new_numbers = []
+numbers.each {|n| new_numbers << n * 10}
+puts new_numbers
+
+new_numbers_2 = numbers.map {|n| n * 10}
+puts new_numbers_2
+
+numbers = [1,2,3,4,5,6]
+# even_numbers = numbers.select{|n| n.even?}
+even_numbers = numbers.select(&:even?)
+puts even_numbers
+
 # def greeting(country = 'unknown')
 #   country
 # end
@@ -33,5 +47,5 @@ end
 # filename
 # fizz_buzz_judge
 
-require 'date'
-Date.today
+# require 'date'
+# Date.today
