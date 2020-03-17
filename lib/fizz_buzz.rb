@@ -31,6 +31,38 @@ end
 greeting('田中さん')
 greeting('田中さん','山田さん')
 
+fruits = ['apple','melon','orange']
+fruits_group = fruits.each_with_index{|fruit,i| puts "#{i}: #{fruit}"}
+
+class User
+  attr_accessor :name
+  def initialize(name)
+    @name = name
+  end
+
+  def self.create_users(names)
+    names.map do |name|
+      User.new(name)
+    end
+  end
+
+  def hello
+    puts "Hello, I am #{@name}"
+  end
+end
+
+names = %w[Alice Bob Carol]
+users = User.create_users(names)
+users.each do |user|
+  puts user.hello
+end
+
+# user = User.new('Tom')
+# user.hello
+# puts user.name
+# user.name = 'John'
+# puts user.name
+
 # def greeting(country = 'unknown')
 #   country
 # end
